@@ -1,37 +1,184 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-<link
-rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-/>
-<title>Kzdra Linktree</title>
-    </head>
-    <body>
-   <div class="container animate__animated animate__zoomIn">
-<!-- PROFILE PICTURE -->
-    <div class="profile">
-        <img src="profile.jpg" alt="error image" class="animate__animated animate__pulse animate__infinite"/>
-        <p class="animate__animated animate__fadeInDownBig">IndraHardika</p>
-    </div>
-<!-- LINK TREE BUTTONS -->
-    <div class="link">
-        <a href="https://kzdra.github.io/MyProfileCard" target="_blank" class="animate__animated animate__bounceInLeft"><i class="fa-solid fa-user" style="color: #534646;"></i> profile</a>
-        <a href="https://instagram.com/indrahardikap" target="_blank" class="animate__animated animate__bounceInLeft animate__delay-1s"><i class="fa-brands fa-instagram" style="color: #337ad7;"></i> instagram</a>
-        <a href="https://open.spotify.com/user/217d7lob455pt746skzt56f5y?si=2114ae19729b4c08" target="_blank" class="animate__animated animate__bounceInDown animate__delay-2s"><i class="fa-brands fa-spotify" style="color: #41c238;"></i> Spotify</a>
-        <a href="https://github.com/KZdra" target="_blank" class="animate__animated animate__bounceInRight animate__delay-3s"><i class="fa-brands fa-github" style="color: #5108aa;"></i> Github</a>  
-    </div>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Indra Hardika (@KZdra) - Web Developer & Tech Enthusiast. Personal links, portfolio, and social profiles.">
+    <meta name="author" content="Indra Hardika">
+    <meta name="theme-color" content="#0b0f19">
     
-    <!-- FOOTER -->
-    <div class="footer animate__animated animate__bounceInUp animate__delay-4s">
-        <i>Made with love 💕</i>
+    <!-- Open Graph / Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Indra Hardika | Links & Portfolio">
+    <meta property="og:description" content="Explore my portfolio, GitHub projects, and social channels.">
+    <meta property="og:image" content="profile.jpg">
+    
+    <title>Indra Hardika &mdash; Links &amp; Portfolio</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Ambient Background Gradients & Grid -->
+    <div class="ambient-glow glow-top" aria-hidden="true"></div>
+    <div class="ambient-glow glow-bottom" aria-hidden="true"></div>
+    <div class="bg-grid-pattern" aria-hidden="true"></div>
+
+    <main class="page-wrapper">
+        <div class="card-container">
+            
+            <!-- Quick Action Top Bar -->
+            <header class="top-bar">
+                <div class="status-indicator">
+                    <span class="status-dot"></span>
+                    <span class="status-text">Available for projects</span>
+                </div>
+                <div class="top-actions">
+                    <button id="btn-share" class="icon-btn" title="Share Profile" aria-label="Share profile">
+                        <i class="fa-solid fa-share-nodes"></i>
+                    </button>
+                    <button id="btn-copy-link" class="icon-btn" title="Copy Page Link" aria-label="Copy page link">
+                        <i class="fa-solid fa-link"></i>
+                    </button>
+                </div>
+            </header>
+
+            <!-- Profile Header -->
+            <section class="profile-header">
+                <div class="avatar-wrapper">
+                    <img src="profile.jpg" alt="Indra Hardika" class="avatar-img" width="120" height="120">
+                    <div class="avatar-badge" title="Verified Creator">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                </div>
+
+                <div class="profile-info">
+                    <h1 class="profile-name">
+                        Indra Hardika
+                    </h1>
+                    <div class="profile-handle">@KZdra</div>
+                    <p class="profile-bio">
+                        Web Developer &amp; Tech Enthusiast passionate about building clean, modern, and high-performance digital experiences.
+                    </p>
+                </div>
+
+                <!-- Meta Badges -->
+                <div class="meta-tags">
+                    <span class="meta-tag">
+                        <i class="fa-solid fa-location-dot"></i> Indonesia
+                    </span>
+                    <span class="meta-tag">
+                        <i class="fa-solid fa-code"></i> Frontend &amp; Web
+                    </span>
+                </div>
+            </section>
+
+            <!-- Links Section -->
+            <section class="links-section" aria-label="Personal Links">
+                <h2 class="section-title">Connect &amp; Explore</h2>
+                
+                <div class="links-list">
+                    <!-- Featured Link: Portfolio -->
+                    <a href="https://kzdra.github.io/MyProfileCard" target="_blank" rel="noopener noreferrer" class="link-card featured">
+                        <div class="card-glow" aria-hidden="true"></div>
+                        <div class="link-icon-box icon-portfolio">
+                            <i class="fa-solid fa-id-card-clip"></i>
+                        </div>
+                        <div class="link-content">
+                            <div class="link-title-row">
+                                <span class="link-title">Interactive Profile Card</span>
+                                <span class="badge-featured">Featured</span>
+                            </div>
+                            <span class="link-desc">View portfolio showcase &amp; credentials</span>
+                        </div>
+                        <div class="link-arrow">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </div>
+                    </a>
+
+                    <!-- GitHub -->
+                    <a href="https://github.com/KZdra" target="_blank" rel="noopener noreferrer" class="link-card">
+                        <div class="card-glow" aria-hidden="true"></div>
+                        <div class="link-icon-box icon-github">
+                            <i class="fa-brands fa-github"></i>
+                        </div>
+                        <div class="link-content">
+                            <span class="link-title">GitHub</span>
+                            <span class="link-desc">Explore repositories, scripts &amp; code</span>
+                        </div>
+                        <div class="link-arrow">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </div>
+                    </a>
+
+                    <!-- Instagram -->
+                    <a href="https://instagram.com/indrahardikap" target="_blank" rel="noopener noreferrer" class="link-card">
+                        <div class="card-glow" aria-hidden="true"></div>
+                        <div class="link-icon-box icon-instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                        <div class="link-content">
+                            <span class="link-title">Instagram</span>
+                            <span class="link-desc">Personal updates, design &amp; daily stories</span>
+                        </div>
+                        <div class="link-arrow">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </div>
+                    </a>
+
+                    <!-- Spotify -->
+                    <a href="https://open.spotify.com/user/217d7lob455pt746skzt56f5y?si=2114ae19729b4c08" target="_blank" rel="noopener noreferrer" class="link-card">
+                        <div class="card-glow" aria-hidden="true"></div>
+                        <div class="link-icon-box icon-spotify">
+                            <i class="fa-brands fa-spotify"></i>
+                        </div>
+                        <div class="link-content">
+                            <span class="link-title">Spotify</span>
+                            <span class="link-desc">Curated tracks &amp; coding soundtracks</span>
+                        </div>
+                        <div class="link-arrow">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+            <!-- Skills / Technologies -->
+            <section class="skills-section">
+                <h2 class="section-title">Core Technologies</h2>
+                <div class="skills-grid">
+                    <span class="skill-pill"><i class="fa-brands fa-html5"></i> HTML5</span>
+                    <span class="skill-pill"><i class="fa-brands fa-css3-alt"></i> CSS3 / Modern</span>
+                    <span class="skill-pill"><i class="fa-brands fa-js"></i> JavaScript</span>
+                    <span class="skill-pill"><i class="fa-brands fa-git-alt"></i> Git / GitHub</span>
+                    <span class="skill-pill"><i class="fa-solid fa-mobile-screen"></i> Responsive UI</span>
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <footer class="page-footer">
+                <p class="copyright">&copy; <span id="year">2026</span> Indra Hardika. All rights reserved.</p>
+                <p class="footer-note">Designed &amp; engineered for fast performance.</p>
+            </footer>
+
+        </div>
+    </main>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast" role="status" aria-live="polite">
+        <i class="fa-solid fa-circle-check toast-icon"></i>
+        <span id="toast-message">Link copied to clipboard!</span>
     </div>
-   </div>
-    </body>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
 </html>
